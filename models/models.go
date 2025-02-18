@@ -75,4 +75,5 @@ type Pet struct {
 	MinWeight   int    `json:"min_weight"`
 	MaxWeight   int    `json:"max_weight"`
 	Description string `json:"description"`
+	LifeSpan    int    `json:"lifespan"`
 }
