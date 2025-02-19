@@ -17,7 +17,7 @@ func (app *application) routes() http.Handler {
 	fileServer := http.FileServer(http.Dir("./static/"))
 	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 
-	//display our test page
+	// display our test page
 	mux.Get("/test-patterns", app.TestPatterns)
 
 	// factory routes
@@ -25,6 +25,10 @@ func (app *application) routes() http.Handler {
 	mux.Get("/api/cat-from-factory", app.CreateCatFromFactory)
 	mux.Get("/api/dog-from-abstract-factory", app.CreateDogFormAbstractFactory)
 	mux.Get("/api/cat-from-abstract-factory", app.CreateCatFormAbstractFactory)
+
+	// builder routes
+	mux.Get("/api/dog-from-builder", app.CreateDogWithBuilder)
+	mux.Get("/api/cat-from-builder", app.CreateCatWithBuilder)
 
 	mux.Get("/", app.ShowHome)
 	mux.Get("/{page}", app.ShowPage)
