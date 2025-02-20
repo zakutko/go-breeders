@@ -2,7 +2,7 @@ package configuration
 
 import (
 	"database/sql"
-	"go-greeders/models"
+	"go-breeders/models"
 	"sync"
 )
 

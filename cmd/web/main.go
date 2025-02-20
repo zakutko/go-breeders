@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"go-greeders/configuration"
+	"go-breeders/configuration"
 	"html/template"
 	"log"
 	"net/http"

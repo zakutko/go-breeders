@@ -1,6 +1,6 @@
 package pets
 
-import "go-greeders/models"
+import "go-breeders/models"
 
 func NewPet(species string) *models.Pet {
 	pet := models.Pet{

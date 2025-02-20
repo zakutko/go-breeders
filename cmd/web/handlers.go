@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-greeders/pets"
+	"go-breeders/pets"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"

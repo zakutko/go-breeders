@@ -1,4 +1,4 @@
-module go-greeders
+module go-breeders
 
 go 1.23.5
 

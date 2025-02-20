@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-greeders/configuration"
+	"go-breeders/configuration"
 	"os"
 	"testing"
 )

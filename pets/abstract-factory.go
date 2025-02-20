@@ -3,7 +3,7 @@ package pets
 import (
 	"errors"
 	"fmt"
-	"go-greeders/models"
+	"go-breeders/models"
 )
 
 type AnimalInterface interface {
